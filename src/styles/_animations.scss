@@ -1,0 +1,10 @@
+
+@keyframes space {
+	0%, 40% { -webkit-filter: blur(1px); }
+	to { -webkit-filter: blur(20px); }
+}
+
+@keyframes pulse {
+	0%, 2% { opacity: 0;}
+	100% { opacity: 1;}
+}

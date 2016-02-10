@@ -1,0 +1,26 @@
+{
+    "ecmaFeatures": {
+        arrowFunctions: true,
+		blockBindings: true,
+		classes: true,
+		defaultParams: true,
+		destructuring: true,
+		generators: true,
+		modules: true,
+		objectLiteralComputedProperties: true,
+		objectLiteralDuplicateProperties: true,
+		objectLiteralShorthandMethods: true,
+		objectLiteralShorthandProperties: true,
+		restParams: true,
+		spread: true,
+		superInFunctions: true,
+		templateStrings: true,
+		globalReturn: true,
+		jsx: true
+    },
+    "rules": {
+	    "strict": 0,
+	    "semi": [2, "always"]
+    },
+    "parser": "babel-eslint"
+}

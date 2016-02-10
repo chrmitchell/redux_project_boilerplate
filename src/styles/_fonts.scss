@@ -1,0 +1,24 @@
+$font1: "brandon";
+$font1-b: "brandon-bold";
+$font1-i: "brandon-italic";
+
+@font-face {
+	font-family: "brandon";
+	font-weight: normal;
+	font-style: normal;
+	src: url("../fonts/Brandon_reg.otf");
+}
+
+@font-face {
+	font-family: "brandon-bold";
+	font-weight: normal;
+	font-style: normal;
+	src: url("../fonts/Brandon_bld.otf");
+}
+
+@font-face {
+	font-family: "brandon-italic";
+	font-weight: normal;
+	font-style: normal;
+	src: url("../fonts/Brandon_reg_it.otf");
+}
