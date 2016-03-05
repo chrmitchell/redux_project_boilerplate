@@ -1,1 +1,7 @@
-console.log('test');
+var React = require('react');
+var ReactDOM = require('react-dom');
+
+ReactDOM.render(
+	<h1>test</h1>,
+	document.getElementById('content')
+);
