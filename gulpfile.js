@@ -23,22 +23,16 @@ var LIVE_SERVER_OPTS = { port: 35731 };
 /** File paths */
 var dist = 'dist/app';
 
-var entryFile = './src/js/main.js';
+var entryFiles = ['./src/js/main.js'];
 var htmlFiles = 'src/**/*.html';
 var htmlBuild = dist;
 
 
-/** globals **/
-var WATCH = true;
-
-var bundler = browserify(entryFile, {
+var bundler = watchify(browserify({
+    entries: entryFiles,
     debug: true,
     transform: [babelify]
-});
-
-if (WATCH) {
-    bundler = watchify(bundler);
-}
+}));
 
 gulp.task('sass', function() {
     gulp.src('./src/styles/**/*.scss')
@@ -71,7 +65,6 @@ gulp.task('browserify', function () {
     };
     bundler.on('update', rebundle);
     return rebundle();
-
 });
 
 gulp.task('build', function() {

@@ -1,7 +1,10 @@
 A starting point for ES6 development with Redux, React, Sass, Browserify, and Gulp.
 
+Redux Project Boilerplate
+=====
 
-### Usage
+
+## Usage
 
 #####build project and start server (for development):
 ```
@@ -14,4 +17,4 @@ gulp build
 ```
 
 #####run tests:
-`npm run test` or ```npm run test:watch```
+`npm run test` or `npm run test:watch`
