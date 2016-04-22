@@ -1,6 +1,6 @@
 {
   "name": "redux-project-boilerplate",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "dependencies": {
     "@chris_mitchell_hbg/duration-parser": "0.0.2",
     "deep-freeze": "0.0.1",
