@@ -1,6 +1,6 @@
 
 const initialState = {
-	message: 'testo'
+	message: 'test'
 };
 
 const appReducer = ( state = initialState, action ) => {
