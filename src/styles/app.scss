@@ -1,18 +1,15 @@
 @import 'base';
 @import 'fonts';
-@import 'themes/theme-1';
 @import 'colors';
-
-body {
-	background: color(blue);
-	font-family: $font1, arial, sans-serif;
-}
 
 #content {
 	height: 100%;
 	margin: 0; padding: 0;
-	// display: flex;
-	// justify-content: center;
-	// align-items: flex-start;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: color(red);
+	color: white;
+	font-family: $font1, arial, sans-serif;
+	font-size: 350%;
 }
-
