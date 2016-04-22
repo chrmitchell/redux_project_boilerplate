@@ -2,6 +2,8 @@ var React = require('react');
 var ReactDOM = require('react-dom');
 
 ReactDOM.render(
-	<h1>test</h1>,
+	<div>
+		<div>test</div>
+	</div>,
 	document.getElementById('content')
 );

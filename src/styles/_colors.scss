@@ -1,5 +1,12 @@
-$tan: hsl(27,56%,94%);
-$darkTan: darken(saturate($tan, 5), 5);
+@function color($key) {
+  @if map-has-key($colors, $key) {
+    @return map-get($colors, $key);
+  }
 
-$green: hsl(120,19%,92%);
-$darkGreen: darken(saturate($green, 5), 5);
+  @warn "Unknown `#{$key}` in $colors.";
+  @return null;
+}
+
+$colors: (
+	blue: rgb(144,174,180)
+);

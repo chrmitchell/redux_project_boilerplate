@@ -1,156 +1,18 @@
-
+@import 'base';
 @import 'fonts';
 @import 'themes/theme-1';
 @import 'colors';
 
-*, *::before, *::after { box-sizing: border-box; }
-
-html, body { margin: 0; padding: 0; height: 100%; }
-
 body {
-	background: $bodyBg;
-	// background: linear-gradient( to bottom, rgba(0,0,0,0.25), rgba(0,0,0,0.1) 75%), url('../img/splash7.jpg'), ;
+	background: color(blue);
 	font-family: $font1, arial, sans-serif;
 }
 
 #content {
 	height: 100%;
-	// background: #69c;
-	// background: $green;
 	margin: 0; padding: 0;
-	display: flex;
-	justify-content: center;
-	align-items: flex-start;
+	// display: flex;
+	// justify-content: center;
+	// align-items: flex-start;
 }
 
-.recipe-editor {
-	margin: 0; padding: 0;
-	height: 99.4%;
-	width: 98.5%;
-	outline: none;
-}
-
-.tagger {
-	margin: 0;
-	padding: 0;
-	display: flex;
-	position: relative;
-	width: 100%;
-	height: 93%;
-}
-
-.pane {
-	height: 98%;
-	border-radius: 3px;
-	margin: 0;
-	padding: 0;
-	overflow-x: hidden;
-	overflow-y: auto;
-}
-
-.list {
-	border: 2px solid rgb(240,240,240);
-	background: $listBg;
-	// background: rgba(255,255,255,0.4);
-
-	color: $listColor;
-	margin: 0 2px;
-	align-items: center;
-	padding: 1.25em;
-}
-
-[data-predrop="true"] {
-	border: 2px dashed green;
-}
-
-.is-dragging {
-	opacity: 0.3;
-}
-
-
-
-.recipe-info {
-	text-transform: uppercase;
-	font-weight: bold;
-}
-
-.recipe-info .recipeId {
-	border: 1px solid #ccc;
-	background: white;
-	padding: 0.5em;
-	font-family: monospace;
-	font-size: 1.2rem;
-	margin-left: 1rem;
-}
-
-.unused-ingredients[data-predrop="true"] {
-	border: 2px dashed #ccc;
-}
-
-.unused-ingredients {
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	width: 23%;
-	flex: 0 0 auto;
-	min-width: 200px;
-	padding: 1em 0.75em;
-}
-
-.unused-ingredients h3 {
-	margin: 0.4rem 0 0.8rem;
-	/*font-weight: normal;*/
-	text-transform: uppercase;
-	font-size: 0.8rem;
-}
-
-.ingredient {
-	width: 100%;
-	margin: 0.25em;
-	flex: 0 0 auto;
-	border-radius: 3px;
-	background: $tan;
-	/*width: auto;*/
-	line-height: 1.5;
-	padding: 0.35em 0.74em;
-	border: 1px dashed transparent;
-
-	&.is-hovering {
-		// background: blue;
-		// border: 2px solid rgba(0,0,0,0.1);
-		background: $darkTan;
-		// border: 1px solid white;
-	}
-
-	.page-ref {
-		display: none;
-		background: red;
-	}
-}
-
-
-.buttons {
-	margin: 1em;
-	display: flex;
-	justify-content: center;
-}
-
-.button {
-	font-size: 1.5rem;
-	padding: 2% 6%;
-	border-radius: 4px;
-	outline: none;
-	background-color: white;
-	min-width: 30%;
-}
-
-
-.save-button {
-	background: #ccc;
-	color: #bbb;
-}
-
-.save-button.enabled {
-	background: red;
-	color: white;
-}
