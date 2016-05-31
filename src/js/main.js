@@ -4,9 +4,12 @@ import ReactDOMServer from 'react-dom/server';
 import { createStore, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 import { Provider } from 'react-redux';
+import createLogger from 'redux-logger';
 
 import appReducer from './reducers/appReducer';
 import App from './components/App.jsx';
+
+const logger = createLogger({ timestamp: false, collapsed: true });
 
 const render = () => {
 	ReactDOM.render((
@@ -14,10 +17,6 @@ const render = () => {
 			<App />
 		</Provider>
 	), document.getElementById('content'));
-};
-
-const logState = () => {
-	console.log( store.getState() );
 };
 
 const outputHTML = () => {
@@ -28,11 +27,8 @@ const outputHTML = () => {
 	) );
 };
 
-var store = createStore(appReducer, applyMiddleware(thunk));
-
+var store = createStore(appReducer, applyMiddleware(thunk, logger));
 store.subscribe(render);
-store.subscribe(logState);
 
 render();
-logState();
 // outputHTML();

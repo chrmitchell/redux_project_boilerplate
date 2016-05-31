@@ -11,11 +11,11 @@
     "url": "https://github.com/chrmitchell/redux_project_boilerplate/issues"
   },
   "dependencies": {
-    "@chris_mitchell_hbg/duration-parser": "~0.2.2",
     "react": "~15.0.1",
     "react-dom": "~15.0.1",
     "react-redux": "^4.4.5",
     "redux": "~3.5.1",
+    "redux-logger": "^2.6.1",
     "redux-thunk": "^2.0.1"
   },
   "devDependencies": {
